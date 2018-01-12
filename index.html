@@ -151,7 +151,7 @@ function init() {
     // create the ground plane
     var planeGeometry = new THREE.PlaneGeometry(width, width, 40, 40);
     var planeMaterial = new THREE.MeshPhongMaterial({color: 0xffffff});
-    planeMaterial.map = THREE.ImageUtils.loadTexture("../assets/textures/wood_1-1024x1024.png")
+    planeMaterial.map = THREE.ImageUtils.loadTexture("./assets/textures/wood_1-1024x1024.png")
     planeMaterial.map.wrapS = planeMaterial.map.wrapT = THREE.RepeatWrapping;
     planeMaterial.map.repeat.set( 4, 4 );
     var plane = new THREE.Mesh(planeGeometry, planeMaterial);
